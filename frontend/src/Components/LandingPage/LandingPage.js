@@ -42,7 +42,7 @@ function LandingPage() {
           <div className="container">
             <div className="row">
               <div className="image-column">
-                <img src="Foto1Ordinanc.jpg" alt="Sample Image" />
+                <img src={`${process.env.PUBLIC_URL}/Foto1Ordinanc.jpg`} alt="Sample Image" />
               </div>
               <div className="text-column">
                 <h2>{translations.landingPage.serviceTitle1}</h2>
@@ -57,13 +57,13 @@ function LandingPage() {
                 <a href="#" className="button">{translations.landingPage.learnMore}</a>
               </div>
               <div className="image-column">
-                <img src="Foto2Ordinanc.jpg" alt="Sample Image" />
+                <img src={`${process.env.PUBLIC_URL}/Foto2Ordinanc.jpg`} alt="Sample Image" />
               </div>
             </div>
 
             <div className="row">
               <div className="image-column">
-                <img src="Foto3Ordinanc.jpg" alt="Sample Image" />
+                <img src={`${process.env.PUBLIC_URL}/Foto3Ordinanc.jpg`} alt="Sample Image" />
               </div>
               <div className="text-column">
                 <h2>{translations.landingPage.serviceTitle3}</h2>
@@ -78,13 +78,13 @@ function LandingPage() {
                 <a href="#" className="button">{translations.landingPage.learnMore}</a>
               </div>
               <div className="image-column">
-                <img src="Foto4Ordinanc.jpg" alt="Sample Image" />
+                <img src={`${process.env.PUBLIC_URL}/Foto4Ordinanc.jpg`} alt="Sample Image" />
               </div>
             </div>
 
             <div className="row">
               <div className="image-column">
-                <img src="Foto5Ordinanc.jpg" alt="Sample Image" />
+                <img src={`${process.env.PUBLIC_URL}/Foto5Ordinanc.jpg`} alt="Sample Image" />
               </div>
               <div className="text-column">
                 <h2>{translations.landingPage.serviceTitle1}</h2>
@@ -99,7 +99,7 @@ function LandingPage() {
                 <a href="#" className="button">{translations.landingPage.learnMore}</a>
               </div>
               <div className="image-column">
-                <img src="Foto6Ordinanc.jpg" alt="Sample Image" />
+                <img src={`${process.env.PUBLIC_URL}/Foto6Ordinanc.jpg`} alt="Sample Image" />
               </div>
             </div>
           </div>

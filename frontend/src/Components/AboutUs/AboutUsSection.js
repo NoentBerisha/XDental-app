@@ -11,20 +11,20 @@ const AboutUsSection = () => {
       <h1>{translations.aboutUs.title}</h1>
       <div className="flip-cards-container">
         <FlipComponent
-          image="Leonard Frrokaj image.jpg"
+          image={`${process.env.PUBLIC_URL}/Leonard Frrokaj image.jpg`}
           name="Dr. Leonard Frrokaj"
           description={translations.aboutUs.leonard.description}
           bio={translations.aboutUs.leonard.bio}
-          diplomas={["Leonard Frrokaj image.jpg", "Leonard Frrokaj image.jpg"]}
+          diplomas={["Leonard Frrokaj image.jpg", "Leonard Frrokaj image.jpg"].map(diploma => `${process.env.PUBLIC_URL}/${diploma}`)}
           specializations={translations.aboutUs.leonard.specializations}
           otherInfo={translations.aboutUs.leonard.otherInfo}
         />
         <FlipComponent
-          image="Benhard Frrokaj image.jpg"
+          image={`${process.env.PUBLIC_URL}/Benhard Frrokaj image.jpg`}
           name="Dr. Benhard Frrokaj"
           description={translations.aboutUs.benhard.description}
           bio={translations.aboutUs.benhard.bio}
-          diplomas={["Benhard Frrokaj image.jpg", "Benhard Frrokaj image.jpg"]}
+          diplomas={["Benhard Frrokaj image.jpg", "Benhard Frrokaj image.jpg"].map(diploma => `${process.env.PUBLIC_URL}/${diploma}`)}
           specializations={translations.aboutUs.benhard.specializations}
           otherInfo={translations.aboutUs.benhard.otherInfo}
         />

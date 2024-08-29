@@ -16,7 +16,7 @@ function Nav({ onNavClick }) {
   return (
     <nav className='navbar'>
       <div className='logo'>
-        <img src='logo-icon.jpg' alt='Logo' />
+        <img src={`${process.env.PUBLIC_URL}/logo-icon.jpg`} alt='Logo' />
       </div>
       
       <div className={`nav-links ${menuOpen ? 'open' : ''}`}>

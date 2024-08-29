@@ -26,7 +26,7 @@
             <Slider {...settings}>
                 {images?.map((image, index) => (
                     <div key={index}>
-                        <img src={image} alt={`Slide ${index}`} />
+                        <img src={`${process.env.PUBLIC_URL}/${image}`} alt={`Slide ${index}`} />
                     </div>
                 ))}
             </Slider>
