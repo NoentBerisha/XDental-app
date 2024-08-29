@@ -1,0 +1,43 @@
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    width:100%;
+    bottom: 0;
+  }
+  
+  .footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  
+  .social-media {
+    margin-top: 15px;
+  }
+  
+  .social-media a {
+    margin: 10px 0;
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: none;
+    display: block;
+    transition: color 0.3s ease;
+  }
+  
+  .social-media a .icon {
+    margin-right: 8px;
+    font-size: 1.5rem;
+  }
+  
+  .social-media a:hover {
+    color: #007bff;
+  }
+  

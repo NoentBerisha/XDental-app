@@ -1,0 +1,52 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Availability",
+    "contact": "Contact"
+  },
+  "aboutUs": {
+    "title": "About Us",
+    "leonard": {
+      "description": "Dr. Leonard Frrokaj is a highly experienced dentist specializing in cosmetic dentistry and orthodontics.",
+      "bio": "Dr. Leonard Frrokaj has over 20 years of experience in the field.",
+      "specializations": ["Cosmetic Dentistry", "Orthodontics"],
+      "otherInfo": "Dr. Leonard Frrokaj is also a member of the American Dental Association."
+    },
+    "benhard": {
+      "description": "Dr. Benhard Frrokaj is a renowned dentist with expertise in pediatric dentistry and preventive care.",
+      "bio": "Dr. Benhard Frrokaj is known for her gentle approach with children.",
+      "specializations": ["Pediatric Dentistry", "Preventive Care"],
+      "otherInfo": "Dr. Benhard Frrokaj has published several papers on pediatric dental care."
+    },
+    "location": {
+      "title": "Our Location",
+      "address": "123 Dental Street, Tirana, Albania",
+      "phone": "+355 123 456 789",
+      "email": "info@dentalclinic.com"
+    },
+    "workingHours": {
+      "title": "Working Hours",
+      "days": "Monday - Friday",
+      "hours": "9:00 AM - 5:00 PM"
+    }
+  },
+  "contactUs": {
+    "title": "Contact Us",
+    "phone": {
+      "title": "Phone",
+      "number": "+1 (123) 456-7890"
+    },
+    "email": {
+      "title": "Email",
+      "address": "info@example.com"
+    },
+    "socialMedia": {
+      "title": "Follow Us",
+      "facebook": "https://www.facebook.com/yourpage",
+      "twitter": "https://www.twitter.com/yourprofile",
+      "instagram": "https://www.instagram.com/yourprofile",
+      "linkedin": "https://www.linkedin.com/in/yourprofile"
+    }
+  }
+}

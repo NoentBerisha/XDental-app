@@ -1,0 +1,52 @@
+{
+  "nav": {
+    "home": "Kreu",
+    "about": "Rreth Nesh",
+    "services": "Terminet",
+    "contact": "Kontakti"
+  },
+  "aboutUs": {
+    "title": "Rreth Nesh",
+    "leonard": {
+      "description": "Dr. Leonard Frrokaj është një dentist me përvojë të lartë, i specializuar në stomatologjinë kozmetike dhe ortodonci.",
+      "bio": "Dr. Leonard Frrokaj ka mbi 20 vjet përvojë në këtë fushë.",
+      "specializations": ["Stomatologji Kozmetike", "Ortodonci"],
+      "otherInfo": "Dr. Leonard Frrokaj është gjithashtu anëtar i Shoqatës Amerikane të Stomatologjisë."
+    },
+    "benhard": {
+      "description": "Dr. Benhard Frrokaj është një dentist i njohur me ekspertizë në stomatologjinë pediatrike dhe kujdesin parandalues.",
+      "bio": "Dr. Benhard Frrokaj është i njohur për qasjen e tij të butë me fëmijët.",
+      "specializations": ["Stomatologji Pediatrike", "Kujdes Parandalues"],
+      "otherInfo": "Dr. Benhard Frrokaj ka publikuar disa artikuj mbi kujdesin dentar pediatrik."
+    },
+    "location": {
+      "title": "Lokacioni Ynë",
+      "address": "123 Rruga Dentare, Tiranë, Shqipëri",
+      "phone": "+355 123 456 789",
+      "email": "info@dentalclinic.com"
+    },
+    "workingHours": {
+      "title": "Orari i Punës",
+      "days": "E Hënë - E Premte",
+      "hours": "9:00 AM - 5:00 PM"
+    }
+  },
+  "contactUs": {
+    "title": "Na Kontaktoni",
+    "phone": {
+      "title": "Telefoni",
+      "number": "+1 (123) 456-7890"
+    },
+    "email": {
+      "title": "Email",
+      "address": "info@example.com"
+    },
+    "socialMedia": {
+      "title": "Na Ndiqni",
+      "facebook": "https://www.facebook.com/yourpage",
+      "twitter": "https://www.twitter.com/yourprofile",
+      "instagram": "https://www.instagram.com/yourprofile",
+      "linkedin": "https://www.linkedin.com/in/yourprofile"
+    }
+  }
+}

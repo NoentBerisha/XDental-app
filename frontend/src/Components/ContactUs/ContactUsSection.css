@@ -1,0 +1,49 @@
+.ContactUs {
+    max-width: 800px;
+    margin: 105px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ContactUs h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.ContactInfo {
+    margin-bottom: 20px;
+}
+
+.ContactInfo h3 {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.ContactInfo p {
+    color: #777;
+    font-size: 16px;
+}
+
+.ContactInfo ul {
+    list-style: none;
+    padding: 0;
+}
+
+.ContactInfo ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.ContactInfo ul li a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.ContactInfo ul li a:hover {
+    color: #0056b3;
+}
