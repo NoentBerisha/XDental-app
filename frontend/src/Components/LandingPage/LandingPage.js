@@ -1,9 +1,11 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useContext } from "react";
 import CarouselComponent from "../Carousel/Carousel";
 import './LandingPage.css';
+import { LanguageContext } from '../../Context/LanguageContext';
 
 function LandingPage() {
   const sectionRef = useRef(null);
+  const { translations } = useContext(LanguageContext);
 
   useEffect(() => {
     const section = sectionRef.current;
@@ -43,16 +45,16 @@ function LandingPage() {
                 <img src="Foto1Ordinanc.jpg" alt="Sample Image" />
               </div>
               <div className="text-column">
-                <h2>Service Title 1</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Phasellus luctus elit et ligula tincidunt, sed dictum metus blandit.</p>
-                <a href="#" className="button">Learn More</a>
+                <h2>{translations.landingPage.serviceTitle1}</h2>
+                <p>{translations.landingPage.serviceDescription1}</p>
+                <a href="#" className="button">{translations.landingPage.learnMore}</a>
               </div>
             </div>
             <div className="row reverse">
               <div className="text-column">
-                <h2>Service Title 2</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Phasellus luctus elit et ligula tincidunt, sed dictum metus blandit.</p>
-                <a href="#" className="button">Learn More</a>
+                <h2>{translations.landingPage.serviceTitle2}</h2>
+                <p>{translations.landingPage.serviceDescription2}</p>
+                <a href="#" className="button">{translations.landingPage.learnMore}</a>
               </div>
               <div className="image-column">
                 <img src="Foto2Ordinanc.jpg" alt="Sample Image" />
@@ -64,16 +66,16 @@ function LandingPage() {
                 <img src="Foto3Ordinanc.jpg" alt="Sample Image" />
               </div>
               <div className="text-column">
-                <h2>Service Title 1</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Phasellus luctus elit et ligula tincidunt, sed dictum metus blandit.</p>
-                <a href="#" className="button">Learn More</a>
+                <h2>{translations.landingPage.serviceTitle3}</h2>
+                <p>{translations.landingPage.serviceDescription3}</p>
+                <a href="#" className="button">{translations.landingPage.learnMore}</a>
               </div>
             </div>
             <div className="row reverse">
               <div className="text-column">
-                <h2>Service Title 2</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Phasellus luctus elit et ligula tincidunt, sed dictum metus blandit.</p>
-                <a href="#" className="button">Learn More</a>
+                <h2>{translations.landingPage.serviceTitle4}</h2>
+                <p>{translations.landingPage.serviceDescription4}</p>
+                <a href="#" className="button">{translations.landingPage.learnMore}</a>
               </div>
               <div className="image-column">
                 <img src="Foto4Ordinanc.jpg" alt="Sample Image" />
@@ -85,16 +87,16 @@ function LandingPage() {
                 <img src="Foto5Ordinanc.jpg" alt="Sample Image" />
               </div>
               <div className="text-column">
-                <h2>Service Title 1</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Phasellus luctus elit et ligula tincidunt, sed dictum metus blandit.</p>
-                <a href="#" className="button">Learn More</a>
+                <h2>{translations.landingPage.serviceTitle1}</h2>
+                <p>{translations.landingPage.serviceDescription1}</p>
+                <a href="#" className="button">{translations.landingPage.learnMore}</a>
               </div>
             </div>
             <div className="row reverse">
               <div className="text-column">
-                <h2>Service Title 2</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Phasellus luctus elit et ligula tincidunt, sed dictum metus blandit.</p>
-                <a href="#" className="button">Learn More</a>
+                <h2>{translations.landingPage.serviceTitle2}</h2>
+                <p>{translations.landingPage.serviceDescription2}</p>
+                <a href="#" className="button">{translations.landingPage.learnMore}</a>
               </div>
               <div className="image-column">
                 <img src="Foto6Ordinanc.jpg" alt="Sample Image" />

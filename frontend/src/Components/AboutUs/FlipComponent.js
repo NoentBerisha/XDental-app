@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import './FlipComponent.css';
+import { LanguageContext } from '../../Context/LanguageContext';
 
 function FlipComponent({ image, name, description, bio, diplomas, specializations, otherInfo }) {
   const [enlargedImage, setEnlargedImage] = useState(null);
+  const { translations } = useContext(LanguageContext);
 
   const handleImageClick = (src) => {
     setEnlargedImage(src);
@@ -26,7 +28,7 @@ function FlipComponent({ image, name, description, bio, diplomas, specialization
         </div>  
           {diplomas && (
             <div className="section">
-              <h3>Diplomas</h3>
+              <h3>{translations.aboutUs.titles.diplomas}</h3>
               <div className="diplomas">
                 {diplomas?.map((diploma, index) => (
                   <img
@@ -42,7 +44,7 @@ function FlipComponent({ image, name, description, bio, diplomas, specialization
           )}
           {specializations && (
             <div className="section">
-              <h3>Specializations</h3>
+              <h3>{translations.aboutUs.titles.specializations}</h3>
               <ul>
                 {specializations?.map((specialization, index) => (
                   <li key={index}>{specialization}</li>
@@ -52,7 +54,7 @@ function FlipComponent({ image, name, description, bio, diplomas, specialization
           )}
           {otherInfo && (
             <div className="section">
-              <h3>Other Information</h3>
+              <h3>{translations.aboutUs.titles.otherInformation}</h3>
               <p>{otherInfo}</p>
             </div>
           )}

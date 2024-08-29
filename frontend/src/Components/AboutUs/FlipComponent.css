@@ -39,7 +39,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 .flip-card-back {
@@ -55,7 +55,7 @@
 }
 
 .dentist-image {
-    width: 80%;
+    width: 70%;
     height: auto;
     border-radius: 50%;
     margin-bottom: 20px;
@@ -163,4 +163,28 @@
 .flip-card .button:hover {
     background-color: #2980b9;
     color: #fff;
+}
+
+@media screen and (max-width: 500px) {
+    .flip-card {
+        width: 400px;
+    }
+
+    .dentist-image {
+        width: 60%;
+    }
+
+    .flip-card h2 {
+        font-size: 1.2rem;
+    }
+
+    .flip-card p {
+        font-size: 0.9rem;
+    }
+
+    .flip-card .button {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+    
 }

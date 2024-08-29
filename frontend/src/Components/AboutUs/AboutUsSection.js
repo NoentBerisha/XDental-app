@@ -44,8 +44,7 @@ const AboutUsSection = () => {
         <div className="Map">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1858.692176784812!2d20.429221491290303!3d42.383377809328785!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2shu!4v1724884425391!5m2!1sen!2shu"
-            width="600"
-            height="450"
+            className="frame"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"

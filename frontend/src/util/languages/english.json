@@ -19,6 +19,11 @@
       "specializations": ["Pediatric Dentistry", "Preventive Care"],
       "otherInfo": "Dr. Benhard Frrokaj has published several papers on pediatric dental care."
     },
+    "titles": {
+      "diplomas": "Diplomas",
+      "specializations": "Specializations",
+      "otherInformation": "Other Information"
+    },
     "location": {
       "title": "Our Location",
       "address": "123 Dental Street, Tirana, Albania",
@@ -48,5 +53,47 @@
       "instagram": "https://www.instagram.com/yourprofile",
       "linkedin": "https://www.linkedin.com/in/yourprofile"
     }
-  }
+  },
+  "availability": {
+    "calendarTitle": "Dentist Availability Calendar",
+    "available": "Available",
+    "booked": "Booked",
+    "newEvent": "New Event",
+    "editEvent": "Edit Event",
+    "createEvent": "Create Event",
+    "eventTitle": "Event Title",
+    "startTime": "Start Time",
+    "endTime": "End Time",
+    "close": "Close",
+    "deleteEvent": "Delete Event",
+    "saveChanges": "Save Changes"
+  },
+  "calendar": {
+        "allDay": "All Day",
+        "previous": "Previous",
+        "next": "Next",
+        "today": "Today",
+        "month": "Month",
+        "week": "Week",
+        "day": "Day",
+        "agenda": "Agenda",
+        "date": "Date",
+        "time": "Time",
+        "event": "Event",
+        "noEventsInRange": "No events in this range",
+        "more": "more"
+    },
+    "landingPage":{
+      "learnMore": "Learn More",
+      "serviceTitle1": "Cosmetic Dentistry",
+      "serviceDescription1": "We offer a variety of cosmetic dentistry services to help you achieve the smile you've always wanted.",
+      "serviceTitle2": "Orthodontics",
+      "serviceDescription2": "Our orthodontic treatments can help you achieve a straighter, healthier smile.",
+      "serviceTitle3": "Pediatric Dentistry",
+      "serviceDescription3": "We provide gentle and compassionate dental care for children of all ages.",
+      "serviceTitle4": "Preventive Care",
+      "serviceDescription4": "Our preventive care services can help you maintain optimal oral health and prevent dental issues."
+
+    }
+    
 }

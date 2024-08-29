@@ -1,24 +1,27 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { Calendar, momentLocalizer, Views } from "react-big-calendar";
 import moment from "moment";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import "./Calendar.css";
 import { Modal } from "react-bootstrap";
+import { LanguageContext } from '../../../../Context/LanguageContext';
 
 const localizer = momentLocalizer(moment);
 
 const DentistCalendar = () => {
+  const { translations } = useContext(LanguageContext);
+
   const [events, setEvents] = useState([
     {
       id: 1,
-      title: "Available",
+      title: translations.availability.available,
       start: new Date(2023, 10, 10, 9, 0),
       end: new Date(2023, 10, 10, 12, 0),
       resource: "available",
     },
     {
       id: 2,
-      title: "Booked",
+      title: translations.availability.booked,
       start: new Date(2023, 10, 15, 14, 0),
       end: new Date(2023, 10, 15, 15, 0),
       resource: "booked",
@@ -45,7 +48,7 @@ const DentistCalendar = () => {
         setNewEvent({
           start,
           end,
-          title: "New Event",
+          title: translations.availability.newEvent,
           id: Date.now(),
           resource: "available",
         });
@@ -108,9 +111,25 @@ const DentistCalendar = () => {
     };
   };
 
+  const messages = {
+    allDay: translations.calendar.allDay,
+    previous: translations.calendar.previous,
+    next: translations.calendar.next,
+    today: translations.calendar.today,
+    month: translations.calendar.month,
+    week: translations.calendar.week,
+    day: translations.calendar.day,
+    agenda: translations.calendar.agenda,
+    date: translations.calendar.date,
+    time: translations.calendar.time,
+    event: translations.calendar.event,
+    noEventsInRange: translations.calendar.noEventsInRange,
+    showMore: (total) => `+ ${total} ${translations.calendar.more}`,
+  };
+
   return (
     <div className="calendar-container">
-      <h1>Dentist Availability Calendar</h1>
+      <h1>{translations.availability.calendarTitle}</h1>
 
       <Calendar
         localizer={localizer}
@@ -133,6 +152,7 @@ const DentistCalendar = () => {
         max={new Date(2023, 0, 1, 19)}
         view={view}
         onView={(newView) => setView(newView)}
+        messages={messages}
       />
 
       <Modal show={showEditModal} onHide={handleModalClose}>
@@ -141,13 +161,13 @@ const DentistCalendar = () => {
             &times;
           </button>
           <h4 className="modal-title">
-            {selectedEvent ? "Edit Event" : "Create Event"}
+            {selectedEvent ? translations.availability.editEvent : translations.availability.createEvent}
           </h4>
         </div>
         <div className="modal-body">
           <form>
             <div className="form-group" controlId="editEventTitle">
-              <label>Event Title</label>
+              <label>{translations.availability.eventTitle}</label>
               <input
                 type="text"
                 className="form-control"
@@ -165,7 +185,7 @@ const DentistCalendar = () => {
               />
             </div>
             <div className="form-group" controlId="editEventStart">
-              <label>Start Time</label>
+              <label>{translations.availability.startTime}</label>
               <input
                 type="text"
                 className="form-control"
@@ -177,7 +197,7 @@ const DentistCalendar = () => {
               />
             </div>
             <div className="form-group" controlId="editEventEnd">
-              <label>End Time</label>
+              <label>{translations.availability.endTime}</label>
               <input
                 type="text"
                 className="form-control"
@@ -195,7 +215,7 @@ const DentistCalendar = () => {
             className="btn btn-secondary"
             onClick={handleModalClose}
           >
-            Close
+            {translations.availability.close}
           </button>
           {selectedEvent && (
             <button
@@ -203,7 +223,7 @@ const DentistCalendar = () => {
               className="btn btn-danger"
               onClick={handleEventDelete}
             >
-              Delete Event
+              {translations.availability.deleteEvent}
             </button>
           )}
           {(selectedEvent || newEvent) && (
@@ -212,7 +232,7 @@ const DentistCalendar = () => {
               className="btn btn-primary"
               onClick={handleEventEdit}
             >
-              Save Changes
+              {translations.availability.saveChanges}
             </button>
           )}
         </div>

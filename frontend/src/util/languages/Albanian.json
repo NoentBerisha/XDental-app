@@ -19,6 +19,11 @@
       "specializations": ["Stomatologji Pediatrike", "Kujdes Parandalues"],
       "otherInfo": "Dr. Benhard Frrokaj ka publikuar disa artikuj mbi kujdesin dentar pediatrik."
     },
+    "titles": {
+      "diplomas": "Diplomat",
+      "specializations": "Specializimet",
+      "otherInformation": "Informacione te tjera"
+    },
     "location": {
       "title": "Lokacioni Ynë",
       "address": "123 Rruga Dentare, Tiranë, Shqipëri",
@@ -48,5 +53,45 @@
       "instagram": "https://www.instagram.com/yourprofile",
       "linkedin": "https://www.linkedin.com/in/yourprofile"
     }
-  }
+  },
+  "availability": {
+    "calendarTitle": "Kalendari i Disponueshmërisë së Dentistit",
+    "available": "I Disponueshëm",
+    "booked": "I Rezervuar",
+    "newEvent": "Ngjarje e Re",
+    "editEvent": "Ndrysho Ngjarjen",
+    "createEvent": "Krijo Ngjarjen",
+    "eventTitle": "Titulli i Ngjarjes",
+    "startTime": "Koha e Fillimit",
+    "endTime": "Koha e Mbarimit",
+    "close": "Mbyll",
+    "deleteEvent": "Fshi Ngjarjen",
+    "saveChanges": "Ruaj Ndryshimet"
+},
+"calendar": {
+        "allDay": "Gjithë Ditën",
+        "previous": "Mbrapa",
+        "next": "Përpara",
+        "today": "Sot",
+        "month": "Muaji",
+        "week": "Java",
+        "day": "Dita",
+        "agenda": "Agjenda",
+        "date": "Data",
+        "time": "Koha",
+        "event": "Ngjarje",
+        "noEventsInRange": "Nuk ka ngjarje në këtë interval",
+        "more": "më shumë"
+    },
+    "landingPage": {
+      "learnMore": "Mëso Më Shumë",
+      "serviceTitle1": "Dentistri Kozmetike",
+      "serviceDescription1": "Ne ofrojmë një shumëllojshmëri shërbimesh të dentistrisë kozmetike për t'ju ndihmuar të arrini buzëqeshjen që gjithmonë keni dëshiruar.",
+      "serviceTitle2": "Ortodoncija",
+      "serviceDescription2": "Trajtimet tona ortodontike mund t'ju ndihmojnë të arrini një buzëqeshje më të drejtë dhe më të shëndetshme.",
+      "serviceTitle3": "Dentistri Pediatrike",
+      "serviceDescription3": "Ne ofrojmë kujdes dentar të butë dhe të dhembshur për fëmijët e të gjitha moshave.",
+      "serviceTitle4": "Kujdesi Parandalues",
+      "serviceDescription4": "Shërbimet tona të kujdesit parandalues mund t'ju ndihmojnë të ruani shëndetin optimal oral dhe të parandaloni problemet dentare."
+}
 }
