@@ -10,13 +10,19 @@
     "leonard": {
       "description": "Dr. Leonard Frrokaj është një dentist me përvojë të lartë, i specializuar në stomatologjinë kozmetike dhe ortodonci.",
       "bio": "Dr. Leonard Frrokaj ka mbi 20 vjet përvojë në këtë fushë.",
-      "specializations": ["Stomatologji Kozmetike", "Ortodonci"],
+      "specializations": [
+        "Stomatologji Kozmetike",
+        "Ortodonci"
+      ],
       "otherInfo": "Dr. Leonard Frrokaj është gjithashtu anëtar i Shoqatës Amerikane të Stomatologjisë."
     },
     "benhard": {
       "description": "Dr. Benhard Frrokaj është një dentist i njohur me ekspertizë në stomatologjinë pediatrike dhe kujdesin parandalues.",
       "bio": "Dr. Benhard Frrokaj është i njohur për qasjen e tij të butë me fëmijët.",
-      "specializations": ["Stomatologji Pediatrike", "Kujdes Parandalues"],
+      "specializations": [
+        "Stomatologji Pediatrike",
+        "Kujdes Parandalues"
+      ],
       "otherInfo": "Dr. Benhard Frrokaj ka publikuar disa artikuj mbi kujdesin dentar pediatrik."
     },
     "titles": {
@@ -67,31 +73,36 @@
     "close": "Mbyll",
     "deleteEvent": "Fshi Ngjarjen",
     "saveChanges": "Ruaj Ndryshimet"
-},
-"calendar": {
-        "allDay": "Gjithë Ditën",
-        "previous": "Mbrapa",
-        "next": "Përpara",
-        "today": "Sot",
-        "month": "Muaji",
-        "week": "Java",
-        "day": "Dita",
-        "agenda": "Agjenda",
-        "date": "Data",
-        "time": "Koha",
-        "event": "Ngjarje",
-        "noEventsInRange": "Nuk ka ngjarje në këtë interval",
-        "more": "më shumë"
-    },
-    "landingPage": {
-      "learnMore": "Mëso Më Shumë",
-      "serviceTitle1": "Dentistri Kozmetike",
-      "serviceDescription1": "Ne ofrojmë një shumëllojshmëri shërbimesh të dentistrisë kozmetike për t'ju ndihmuar të arrini buzëqeshjen që gjithmonë keni dëshiruar.",
-      "serviceTitle2": "Ortodoncija",
-      "serviceDescription2": "Trajtimet tona ortodontike mund t'ju ndihmojnë të arrini një buzëqeshje më të drejtë dhe më të shëndetshme.",
-      "serviceTitle3": "Dentistri Pediatrike",
-      "serviceDescription3": "Ne ofrojmë kujdes dentar të butë dhe të dhembshur për fëmijët e të gjitha moshave.",
-      "serviceTitle4": "Kujdesi Parandalues",
-      "serviceDescription4": "Shërbimet tona të kujdesit parandalues mund t'ju ndihmojnë të ruani shëndetin optimal oral dhe të parandaloni problemet dentare."
+  },
+  "calendar": {
+    "allDay": "Gjithë Ditën",
+    "previous": "Mbrapa",
+    "next": "Përpara",
+    "today": "Sot",
+    "month": "Muaji",
+    "week": "Java",
+    "day": "Dita",
+    "agenda": "Agjenda",
+    "date": "Data",
+    "time": "Koha",
+    "event": "Ngjarje",
+    "noEventsInRange": "Nuk ka ngjarje në këtë interval",
+    "more": "më shumë"
+  },
+  "landingPage": {
+    "learnMore": "Mëso Më Shumë",
+    "serviceTitle1": "Dentistri Kozmetike",
+    "serviceDescription1": "Ne ofrojmë një shumëllojshmëri shërbimesh të dentistrisë kozmetike për t'ju ndihmuar të arrini buzëqeshjen që gjithmonë keni dëshiruar.",
+    "serviceTitle2": "Ortodoncija",
+    "serviceDescription2": "Trajtimet tona ortodontike mund t'ju ndihmojnë të arrini një buzëqeshje më të drejtë dhe më të shëndetshme.",
+    "serviceTitle3": "Dentistri Pediatrike",
+    "serviceDescription3": "Ne ofrojmë kujdes dentar të butë dhe të dhembshur për fëmijët e të gjitha moshave.",
+    "serviceTitle4": "Kujdesi Parandalues",
+    "serviceDescription4": "Shërbimet tona të kujdesit parandalues mund t'ju ndihmojnë të ruani shëndetin optimal oral dhe të parandaloni problemet dentare."
+  },
+  "toastMessages": {
+    "dateInPast": "Nuk mund të zgjidhni një datë në të kaluarën.",
+    "eventSaved": "Ngjarja u ruajt me sukses.",
+    "eventDeleted": "Ngjarja u fshi me sukses."
 }
 }

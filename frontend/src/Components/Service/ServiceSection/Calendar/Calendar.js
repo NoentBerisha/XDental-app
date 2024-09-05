@@ -4,6 +4,7 @@ import moment from "moment";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import "./Calendar.css";
 import { Modal } from "react-bootstrap";
+import {toast} from 'react-toastify';
 import { LanguageContext } from '../../../../Context/LanguageContext';
 
 const localizer = momentLocalizer(moment);
@@ -37,6 +38,7 @@ const DentistCalendar = () => {
   const handleSelectSlot = ({ start, end, action }) => {
     const now = new Date();
     if (start < now) {
+      toast.error(translations.toastMessages.dateInPast);
       return;
     }
 
@@ -74,6 +76,7 @@ const DentistCalendar = () => {
     }
     setSelectedEvent(null);
     setShowEditModal(false);
+    toast.success(translations.toastMessages.eventSaved);
   };
 
   const handleEventDelete = () => {
@@ -85,6 +88,7 @@ const DentistCalendar = () => {
       setSelectedEvent(null);
       setNewEvent(null);
       setShowEditModal(false);
+      toast.success(translations.toastMessages.eventDeleted);
     }
   };
 
@@ -166,7 +170,7 @@ const DentistCalendar = () => {
         </div>
         <div className="modal-body">
           <form>
-            <div className="form-group" controlId="editEventTitle">
+            <div className="form-group" controlid="editEventTitle">
               <label>{translations.availability.eventTitle}</label>
               <input
                 type="text"
@@ -184,7 +188,7 @@ const DentistCalendar = () => {
                 }}
               />
             </div>
-            <div className="form-group" controlId="editEventStart">
+            <div className="form-group" controlid="editEventStart">
               <label>{translations.availability.startTime}</label>
               <input
                 type="text"
@@ -196,7 +200,7 @@ const DentistCalendar = () => {
                 readOnly
               />
             </div>
-            <div className="form-group" controlId="editEventEnd">
+            <div className="form-group" controlid="editEventEnd">
               <label>{translations.availability.endTime}</label>
               <input
                 type="text"

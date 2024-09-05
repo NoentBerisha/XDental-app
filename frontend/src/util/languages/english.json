@@ -69,31 +69,34 @@
     "saveChanges": "Save Changes"
   },
   "calendar": {
-        "allDay": "All Day",
-        "previous": "Previous",
-        "next": "Next",
-        "today": "Today",
-        "month": "Month",
-        "week": "Week",
-        "day": "Day",
-        "agenda": "Agenda",
-        "date": "Date",
-        "time": "Time",
-        "event": "Event",
-        "noEventsInRange": "No events in this range",
-        "more": "more"
-    },
-    "landingPage":{
-      "learnMore": "Learn More",
-      "serviceTitle1": "Cosmetic Dentistry",
-      "serviceDescription1": "We offer a variety of cosmetic dentistry services to help you achieve the smile you've always wanted.",
-      "serviceTitle2": "Orthodontics",
-      "serviceDescription2": "Our orthodontic treatments can help you achieve a straighter, healthier smile.",
-      "serviceTitle3": "Pediatric Dentistry",
-      "serviceDescription3": "We provide gentle and compassionate dental care for children of all ages.",
-      "serviceTitle4": "Preventive Care",
-      "serviceDescription4": "Our preventive care services can help you maintain optimal oral health and prevent dental issues."
-
-    }
-    
+    "allDay": "All Day",
+    "previous": "Previous",
+    "next": "Next",
+    "today": "Today",
+    "month": "Month",
+    "week": "Week",
+    "day": "Day",
+    "agenda": "Agenda",
+    "date": "Date",
+    "time": "Time",
+    "event": "Event",
+    "noEventsInRange": "No events in this range",
+    "more": "more"
+  },
+  "landingPage": {
+    "learnMore": "Learn More",
+    "serviceTitle1": "Cosmetic Dentistry",
+    "serviceDescription1": "We offer a variety of cosmetic dentistry services to help you achieve the smile you've always wanted.",
+    "serviceTitle2": "Orthodontics",
+    "serviceDescription2": "Our orthodontic treatments can help you achieve a straighter, healthier smile.",
+    "serviceTitle3": "Pediatric Dentistry",
+    "serviceDescription3": "We provide gentle and compassionate dental care for children of all ages.",
+    "serviceTitle4": "Preventive Care",
+    "serviceDescription4": "Our preventive care services can help you maintain optimal oral health and prevent dental issues."
+  },
+  "toastMessages": {
+    "dateInPast": "You can't select a date in the past.",
+    "eventSaved": "Event saved successfully.",
+    "eventDeleted": "Event deleted successfully."
+  }
 }

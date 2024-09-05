@@ -2,7 +2,7 @@ import React, { useState, useContext } from 'react';
 import './FlipComponent.css';
 import { LanguageContext } from '../../Context/LanguageContext';
 
-function FlipComponent({ image, name, description, bio, diplomas, specializations, otherInfo }) {
+function FlipComponent({ image, name, description, diplomas, specializations, otherInfo }) {
   const [enlargedImage, setEnlargedImage] = useState(null);
   const { translations } = useContext(LanguageContext);
 
@@ -10,8 +10,11 @@ function FlipComponent({ image, name, description, bio, diplomas, specialization
     setEnlargedImage(src);
   };
 
-  const closeModal = () => {
-    setEnlargedImage(null);
+  const closeModal = (e) => {
+    // Prevent closing the modal when clicking on the image
+    if (e.target === e.currentTarget) {
+      setEnlargedImage(null);
+    }
   };
 
   return (
@@ -20,17 +23,16 @@ function FlipComponent({ image, name, description, bio, diplomas, specialization
         <div className="flip-card-front">
           <img src={image} alt={name} className="dentist-image" />
           <h2>{name}</h2>
-          
         </div>
         <div className="flip-card-back">
-        <div className="section">
-          <p>{description}</p>
-        </div>  
+          <div className="section">
+            <p>{description}</p>
+          </div>
           {diplomas && (
             <div className="section">
               <h3>{translations.aboutUs.titles.diplomas}</h3>
               <div className="diplomas">
-                {diplomas?.map((diploma, index) => (
+                {diplomas.map((diploma, index) => (
                   <img
                     key={index}
                     src={diploma}
@@ -46,7 +48,7 @@ function FlipComponent({ image, name, description, bio, diplomas, specialization
             <div className="section">
               <h3>{translations.aboutUs.titles.specializations}</h3>
               <ul>
-                {specializations?.map((specialization, index) => (
+                {specializations.map((specialization, index) => (
                   <li key={index}>{specialization}</li>
                 ))}
               </ul>
@@ -61,9 +63,9 @@ function FlipComponent({ image, name, description, bio, diplomas, specialization
         </div>
       </div>
       {enlargedImage && (
-        <div className="modal" onClick={closeModal}>
-          <span className="close">&times;</span>
-          <img className="modal-content" src={enlargedImage} alt="Enlarged diploma" />
+        <div className="flip-component-modal" onClick={closeModal}>
+          <span className="flip-component-close" onClick={closeModal}>&times;</span>
+          <img className="flip-component-modal-content" src={enlargedImage} alt="Enlarged diploma" />
         </div>
       )}
     </div>

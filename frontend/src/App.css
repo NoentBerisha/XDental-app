@@ -40,3 +40,24 @@ body {
   }
 }
  */
+
+ body{
+  font-size: small;
+ }
+ /* Smaller toast styles for screens less than 600px */
+@media screen and (max-width: 600px) {
+  .Toastify__toast {
+    font-size: 12px;
+    padding: 8px;
+    width: 80%; /* Adjust the width as needed */
+    margin: 5px auto; /* Center the toast */
+    border-radius: 8px;;
+  }
+
+  .Toastify__toast-container {
+    
+
+    display: flex;
+    justify-content: flex-end; /* Center the toasts horizontally */
+  }
+}

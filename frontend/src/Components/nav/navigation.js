@@ -22,9 +22,15 @@ function Nav({ onNavClick }) {
       <div className={`nav-links ${menuOpen ? 'open' : ''}`}>
       
         <ul>
-        <li  onClick={() => onNavClick('landing')}>{translations.nav.home}</li>
-        <li onClick={() => onNavClick('availability')}>{translations.nav.services}</li>
-          <li onClick={() => onNavClick('about')}>{translations.nav.about}</li>
+        <li onClick={() => { onNavClick('landing'); toggleMenu(); }}>
+  {translations.nav.home}
+</li>
+<li onClick={() => { onNavClick('availability'); toggleMenu(); }}>
+  {translations.nav.services}
+</li>
+<li onClick={() => { onNavClick('about'); toggleMenu(); }}>
+  {translations.nav.about}
+</li>
           
           {/* <li onClick={() => onNavClick('contact')}>{translations.nav.contact}</li> */}
         </ul>
