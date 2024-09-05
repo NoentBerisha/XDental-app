@@ -27,7 +27,7 @@
     margin-top: 20px;
   }
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 700px) {
     .flip-cards-container {
       flex-direction: column;
       justify-content: center;
@@ -40,7 +40,7 @@
     }
 
     .frame {
-      width: 400px;
-      height: 400px;
+      width: 350px;
+      height: 350px;
     }
   }

@@ -1,10 +1,10 @@
 /* Flip Component CSS */
 .flip-card {
   background-color: transparent;
-  width: 500px;
+  width: 400px;
   height: 600px;
-  perspective: 1200px;
-  margin: 20px auto;
+  perspective: 1100px;
+  margin: 0px auto;
   border-radius: 15px;
   overflow: hidden;
 }
@@ -136,7 +136,7 @@
 
 @media screen and (max-width: 500px) {
   .flip-card {
-    width: 400px;
+    width: 350px;
   }
 
   .dentist-image {
