@@ -66,7 +66,9 @@
     "endTime": "End Time",
     "close": "Close",
     "deleteEvent": "Delete Event",
-    "saveChanges": "Save Changes"
+    "saveChanges": "Save Changes",
+    "dentist": "Dentist",
+    "patient": "Patient"
   },
   "calendar": {
     "allDay": "All Day",

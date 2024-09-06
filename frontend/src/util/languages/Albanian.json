@@ -72,7 +72,9 @@
     "endTime": "Koha e Mbarimit",
     "close": "Mbyll",
     "deleteEvent": "Fshi Ngjarjen",
-    "saveChanges": "Ruaj Ndryshimet"
+    "saveChanges": "Ruaj Ndryshimet",
+    "dentist": "Dentisti",
+    "patient": "Pacienti"
   },
   "calendar": {
     "allDay": "Gjithë Ditën",

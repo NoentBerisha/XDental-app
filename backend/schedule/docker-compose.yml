@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo:latest
+    container_name: xdental-mongodb
+    ports:
+      - "27018:27017"
+    volumes:
+      - xdental-mongo-data:/data/db
+
+volumes:
+  xdental-mongo-data:
